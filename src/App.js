@@ -4,11 +4,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      person: {
-        name: 'Jusak',
-        age: '27',
-        gender: 'Laki - Laki',
-      }
+      value: 0,
     }
   }
 
@@ -26,13 +22,9 @@ class App extends Component {
   render() {
     return (
        <div>
-        <h1>Nama : {this.state.person.name}</h1>
-        <h1>Age : {this.state.person.age}</h1>
-        <h1>Gender : {this.state.person.gender}</h1>
-
-        <button onClick={() => this.editData()}>
-          Ubah Data
-        </button>
+        <button>+</button>
+        <h1>{this.state.value}</h1>
+        <button>-</button>
        </div>
     );
   }
